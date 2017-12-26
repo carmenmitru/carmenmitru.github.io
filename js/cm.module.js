@@ -10,10 +10,10 @@ CM.controller("CmCtrl",function($scope){
             "name":"Courses",
             "path":"/courses"
         },
-        {
-            "name":"Portofolio",
-            "path":"/portofolio"
-        },
+        // {
+        //     "name":"Portofolio",
+        //     "path":"/portofolio"
+        // },
         {
             "name":"Blog",
             "path":"/blog"
