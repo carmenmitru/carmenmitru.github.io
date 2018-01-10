@@ -1,33 +1,49 @@
 <section>
 
-
-
-<div ng-include="'../common/header.html'"></div>
-
-
-
+  <div ng-include="'../common/header.html'"></div>
 
   <div class="container">
-    <article role="article" class="page card">
+    <div class="page card">
 
-      <header class="post-header">
-        <h1 class="post-title"></h1>
-      </header>
+      <div class="post-header">
+        <h1 class="post-title">Hello!</h1>
+      </div>
 
-      <div class="post-content">
-        <h2>About</h2>
+      <div class="post-content row about-me-description">
+        <div class="col-md-9 col-sm-9 col-xs-12">
+            <p>It's me :)</p>
+            <p>I guess you are here because you want to know a little bit about me,huh?</p>
+            
+            <p class="padding-sm">My name is Carmen , I am student at Technical University "Gheorghe Asachi" of Iasi.
+                I started to learn computer science since I was a 13 years old. Until now I managed
 
+                to learn (by myself) several computer technologies and programming
+                languages.What makes me go further and learn more is an inner desire to create
+                application ,that can truly change the way we live. 
+              
+            </p>
+           
+            <p class="padding-sm">Recently I started to write on my blog about what happened in my life or  technical tutorials.</p>
+            
+            <p class="padding-sm">In my free time I like to travel, listening to music. Sometimes I go on computer science camps or hackathons .</p>
+            <div class="padding-sm">
+                <div>Contact Info : </div>
+                <p><i style="color:#337ab7" class="fa fa-envelope" aria-hidden="true"></i>  carmen.mitru@gmail.com</p>
+                <p><i style="color:#337ab7" class="fa fa-skype" aria-hidden="true"></i> mitru.carmen</p>
+            </div>
+        </div>
+        <div class="col-md-3 col-sm-3 col-xs-12">
+            <img class="img-responsive" src="assets/images/carmen.jpg" alt="Carmen">  
+            <!-- De corectat cu %-->
+            <div><a style="margin-left: 70px;" target="_blank" href="https://drive.google.com/open?id=1ysYAL6p_DHllEd5cFZx7dFZogPftDsev" class="my-resume-link" href="">My resume</a></div>        
+        </div>
+       
+      </div>
 
       </div>
 
-    </article>
+    </div>
 
   </div>
   <div ng-include="'../common/footer.html'"></div>
-
-
-
-
-
-
 </section>

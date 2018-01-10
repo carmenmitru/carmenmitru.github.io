@@ -1,0 +1,46 @@
+<section>
+    <div ng-include="'../common/header.html'"></div>
+    <!-- <div ng-include="'../common/footer.html'"></div> -->
+
+    <div class="container-fluid">
+        <div class="row">
+            <div ng-repeat="p in personalProjects" class="col-sm-3 col-md-3">
+                <div class="project">
+                    <div class="project-img-content">
+                        <img ng-src="../assets/images/projects/{{p.thumbnailImage}}.png" class="img-responsive" />
+                        <span class="project-title">
+
+                            <b style="padding-top:5px;">
+                                 <i ng-if="p.prize == 1" class="fa fa-trophy first-place"></i> 
+                                 <i ng-if="p.prize == 2" class="fa fa-trophy second-place"></i> 
+                                 <i ng-if="p.prize == 3" class="fa fa-trophy third-place"></i> 
+                             
+                                 {{p.title}}</b> 
+                            </b>
+                        </span>
+                    </div>
+                    <div class="content">
+                        <div class="author">
+                            By
+                            <b>{{p.by}}</b> |
+                            <time>{{p.date}}</time>
+                        </div>
+
+                        <p>{{p.description1}}</p>
+
+
+                        <p style="padding-top:5px;">
+                            {{p.description2}}
+                        </p>
+
+                        <div style="padding-top:5px;">
+                            <a target="_blank" ng-href="{{p.link}}" class="btn btn-warning btn-sm">
+                                <i class="fa  fa-github" aria-hidden="true"></i> Repository</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+</section>

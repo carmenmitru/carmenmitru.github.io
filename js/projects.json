@@ -1,0 +1,70 @@
+[
+    {
+        "title":"Google CodeU",
+        "by":"Carmen",
+        "date":"May - August, 2017",
+        "thumbnailImage":"google_icon",
+        "description1":"CodeU is an invitation-only program organised by Google.",
+        "description2":"During the 3 months program I worked on algorithms and data structures coding problems using Java and was continuously receiving constructive feedback from appointed Google Software Engineers.",
+        "link":"https://github.com/carmenmitru/CodeUGoogle.git"
+    },
+    {
+        "title":"MyTax",
+        "date":"May 2017",
+        "by":"Carmen",
+        "thumbnailImage":"logo_web",
+        "description1":"My Tax is a web application built during 8h hackathon IT Marathon.",
+        "description2":"During the 8h hackthon I build a platform that helps citizen to be up to date with their taxes and to be able to pay it a much faster way.",
+        "link":"https://github.com/carmenmitru/MyTax.git"
+    },
+    {
+        "title":"OneStudentApp",
+        "date":"April 2017",
+        "thumbnailImage":"logo_web",
+        "by":"Carmen, Daniela & Andrei",
+        "prize":"2",
+        "description1":"OneStudentApp is a web application build during 24h hackathon FII Practic Hackathon.",
+        "description2":"During the 24h hackthon me, Daniela and Andrei build a share files platform  for students and teachers in universities .",
+        "link":"https://github.com/carmenmitru/OneStudentApp.git"
+    },
+    {
+        "title":"RestaurantApp",
+        "date":"May 2017",
+        "thumbnailImage":"logo_web",
+        "by":"Carmen, Daniela & Andrei",
+        "description1":"RestaurantApp is a web application built during 24h hackathon HackItAll Marathon.",
+        "description2":"During the 24h hackthon me, Daniela and Andrei build a platform that helps restaurant to manage their orders.",
+        "link":"https://github.com/carmenmitru/HackItall.git" 
+    },
+    {
+        "title":"TimeLocker",
+        "date":"May 2016",
+        "prize":"3",
+        "thumbnailImage":"logo_web",
+        "by":"Carmen & Dan Diaconu",
+        "description1":"TimeLocker is a web application built during the contest FIICode.",
+        "description2":"During the contest me, Daniela and Andrei built a platform that helps students to manage their time in a better way.",
+        "link":"https://github.com/carmenmitru/timelocker.git" 
+    },
+    {
+        "title":"DocumentShare",
+        "date":"May 2016",
+        "prize":"3",
+        "thumbnailImage":"logo_web",
+        "by":"Carmen",
+        "description1":"DocumentShare is a web application built during the contest ITMarathon.",
+        "description2":"During the 8h hackthon I built a share file platform.",
+        "link":"" 
+    },
+    {
+        "title":"StudentApp",
+        "date":"May 2016",
+        "prize":"2",
+        "thumbnailImage":"mobilpro_logo",
+        "by":"Carmen",
+        "description1":"StudentApp is a mobile application built for the contest MobilPro.",
+        "description2":"StudentApp  is a mobile app that contains information,courses etc for student enrolled in Technical University 'Gheoghe Asachi' of Iasi.",
+        "link":""
+        
+    }
+]

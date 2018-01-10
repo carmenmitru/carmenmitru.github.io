@@ -1,11 +1,14 @@
 @import url("//fonts.googleapis.com/css?family=Open+Sans:400,300,700");
+@import url('https://fonts.googleapis.com/css?family=Nunito|Raleway');
 html {
-    box-sizing: border-box
+    box-sizing: border-box;
+    
 }
 *,
 *::after,
 *::before {
-    box-sizing: inherit
+    box-sizing: inherit;
+   
 }
 html,
 body,
@@ -93,7 +96,8 @@ video {
     border: 0;
     font-size: 100%;
     font: inherit;
-    vertical-align: baseline
+    vertical-align: baseline;
+    font-family: 'Nunito', sans-serif;
 }
 article,
 aside,
@@ -106,7 +110,7 @@ hgroup,
 menu,
 nav,
 section {
-    display: block
+    display: block;
 }
 body {
     line-height: 1
@@ -397,10 +401,7 @@ h5,
 h6 {
     font-size: 1rem
 }
-p {
-    margin: 0 0 .75em;
-    font-weight: 300
-}
+
 em {
     font-style: italic
 }
@@ -526,7 +527,7 @@ body {
     border-top: 5px solid #337ab7;
     background: #fff url("../images/bg-pattern.png")
 }
-.container {
+/* .container {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -537,7 +538,7 @@ body {
     clear: both;
     content: "";
     display: table
-}
+} */
 .card,
 .post-list .post {
     background-color: #fff;
@@ -553,9 +554,11 @@ body {
 }
 .site-header {
     background-color: #fff;
-    padding: 1.5em 0;
+    padding-top: 1.5em;
+    padding-bottom: 0;
+    /* padding: 0.5em 0.1em 0.4em; */
     margin-bottom: 1.5em;
-    border-bottom: 1px solid rgba(222, 222, 222, 0.5)
+    border-bottom: 1px solid rgba(222, 222, 222, 0.5);
 }
 .site-header h1 {
     margin: 0;
@@ -575,12 +578,16 @@ body {
     float: right
 }
 .site-header a {
-    color: #9a9a9a
+    color: #9a9a9a;
+    text-transform: capitalize;
+    font-size: 19px;
+    font-weight: 800;
 }
 .site-header a:hover,
 .site-header a:focus,
 .site-header a:active {
-    color: #232323
+    color: #232323;
+    text-decoration: none;
 }
 @media screen and (max-width: 480px) {
     .site-header .container {
@@ -706,6 +713,8 @@ body.home {
     width: 100%;
     display: table
 }
+
+
 .hero {
     text-align: center;
     display: table-cell;
@@ -760,14 +769,14 @@ body.home {
 .post-list .post a:hover,
 .post-list .post a:active,
 .post-list .post a:focus {
-    color: #337ab7
+    color: #337ab7;
 }
 .social {
-    padding: 1.5em 0
+    padding: 1.2em 0;
 }
 .social li {
     display: inline-block;
-    padding: 0 .6em
+    padding: 0 .6em;
 }
 .social a {
     color: #9a9a9a
@@ -778,7 +787,7 @@ body.home {
     color: #337ab7
 }
 .social i {
-    font-size: 1.2em
+    font-size: 1.5em;
 }
 .pagination {
     text-align: center;
@@ -806,11 +815,17 @@ body.home {
     color: #aaa;
     font-style: italic
 }
+footer{
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+}
 .site-footer {
     background-color: #fff;
     border-top: 1px solid rgba(222, 222, 222, 0.5);
-    padding: 1.5em;
-    text-align: center
+    /* padding: 1.5em; */
+    text-align: center;
 }
 .site-footer p {
     margin: 0
@@ -839,282 +854,65 @@ body.home {
         animation: octocat-wave 560ms ease-in-out
     }
 }
-@font-face {
-    font-family: "end2end-icons";
-    src: url("../fonts/end2end-icons.eot?vs69d0");
-    src: url("../fonts/end2end-icons.eot?vs69d0#iefix") format("embedded-opentype"), url("../fonts/end2end-icons.ttf?vs69d0") format("truetype"), url("../fonts/end2end-icons.woff?vs69d0") format("woff"), url("../fonts/end2end-icons.svg?vs69d0#end2end-icons") format("svg");
-    font-weight: normal;
-    font-style: normal
-}
-.icon {
-    font-family: "end2end-icons" !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
-.icon-home:before {
-    content: ""
-}
-.icon-comments:before {
-    content: ""
-}
-.icon-comment-o:before {
-    content: ""
-}
-.icon-comments-o:before {
-    content: ""
-}
-.icon-search:before {
-    content: ""
-}
-.icon-share:before {
-    content: ""
-}
-.icon-google-plus:before {
-    content: ""
-}
-.icon-facebook:before {
-    content: ""
-}
-.icon-facebook-rounded:before {
-    content: ""
-}
-.icon-twitter:before {
-    content: ""
-}
-.icon-twitter-rounded:before {
-    content: ""
-}
-.icon-feed:before {
-    content: ""
-}
-.icon-github:before {
-    content: ""
-}
-.icon-linkedin:before {
-    content: ""
-}
-.highlight {
-    padding: 0;
-    margin-top: 1.2em;
-    margin-bottom: 1.2em
-}
-.highlight,
-.highlight .hll,
-.highlight pre,
-.highlight code {
-    background-color: #272822 !important;
-    border: none
-}
-.highlight pre {
-    margin: 0;
-    padding: 1.3em;
-    white-space: pre;
-    line-height: 23px;
-    overflow-x: auto;
-    margin-bottom: 0;
-    word-break: inherit;
-    word-wrap: inherit
-}
-.highlight pre,
-.highlight pre code {
-    color: #eeffdd
-}
-.highlight pre code {
-    white-space: pre;
-    padding: 0 !important
-}
-.highlight pre code * {
-    white-space: nowrap
-}
-.highlight .c {
-    color: #75715e
-}
-.highlight .err {
-    color: #f2f1f2
-}
-.highlight .k {
-    color: #66d9ef
-}
-.highlight .l {
-    color: #ae81ff
-}
-.highlight .n {
-    color: #f8f8f2
-}
-.highlight .o {
-    color: #f92672
-}
-.highlight .p {
-    color: #f8f8f2
-}
-.highlight .cm {
-    color: #75715e
-}
-.highlight .cp {
-    color: #75715e
-}
-.highlight .c1 {
-    color: #75715e
-}
-.highlight .cs {
-    color: #75715e
-}
-.highlight .ge {
-    font-style: italic
-}
-.highlight .gs {
-    font-weight: bold
-}
-.highlight .kc {
-    color: #66d9ef
-}
-.highlight .kd {
-    color: #66d9ef
-}
-.highlight .kn {
-    color: #f92672
-}
-.highlight .kp {
-    color: #66d9ef
-}
-.highlight .kr {
-    color: #66d9ef
-}
-.highlight .kt {
-    color: #66d9ef
-}
-.highlight .ld {
-    color: #e6db74
-}
-.highlight .m {
-    color: #ae81ff
-}
-.highlight .s {
-    color: #e6db74
-}
-.highlight .na {
-    color: #a6e22e
-}
-.highlight .nb {
-    color: #f8f8f2
-}
-.highlight .nc {
-    color: #a6e22e
-}
-.highlight .no {
-    color: #66d9ef
-}
-.highlight .nd {
-    color: #a6e22e
-}
-.highlight .ni {
-    color: #f8f8f2
-}
-.highlight .ne {
-    color: #a6e22e
-}
-.highlight .nf {
-    color: #a6e22e
-}
-.highlight .nl {
-    color: #f8f8f2
-}
-.highlight .nn {
-    color: #f8f8f2
-}
-.highlight .nx {
-    color: #a6e22e
-}
-.highlight .py {
-    color: #f8f8f2
-}
-.highlight .nt {
-    color: #f92672
-}
-.highlight .nv {
-    color: #f8f8f2
-}
-.highlight .ow {
-    color: #f92672
-}
-.highlight .w {
-    color: #f8f8f2
-}
-.highlight .mf {
-    color: #ae81ff
-}
-.highlight .mh {
-    color: #ae81ff
-}
-.highlight .mi {
-    color: #ae81ff
-}
-.highlight .mo {
-    color: #ae81ff
-}
-.highlight .sb {
-    color: #e6db74
-}
-.highlight .sc {
-    color: #e6db74
-}
-.highlight .sd {
-    color: #e6db74
-}
-.highlight .s2 {
-    color: #e6db74
-}
-.highlight .se {
-    color: #ae81ff
-}
-.highlight .sh {
-    color: #e6db74
-}
-.highlight .si {
-    color: #e6db74
-}
-.highlight .sx {
-    color: #e6db74
-}
-.highlight .sr {
-    color: #e6db74
-}
-.highlight .s1 {
-    color: #e6db74
-}
-.highlight .ss {
-    color: #e6db74
-}
-.highlight .bp {
-    color: #f8f8f2
-}
-.highlight .vc {
-    color: #f8f8f2
-}
-.highlight .vg {
-    color: #f8f8f2
-}
-.highlight .vi {
-    color: #f8f8f2
-}
-.highlight .il {
-    color: #ae81ff
-}
-.highlight .gu {
-    color: #75715e
-}
-.highlight .gd {
-    color: #f92672
-}
-.highlight .gi {
-    color: #a6e22e
-}
-.padding-sm{
-    padding: 20px;
-}
+
+
+.project
+{
+    background-color: #FFF;
+    overflow: hidden;
+    box-shadow: 0 0 1px #CCC;
+    margin-bottom: 20px;
+}
+.project img
+{
+    padding: 2px;
+    margin: 0 auto;
+}
+.project .content
+{
+    padding: 15px;
+}
+.project .author
+{
+    font-size: 11px;
+    color: #737373;
+    padding: 25px 30px 20px;
+}
+.project .project-img-content
+{
+    /* height: 196px; */
+    position: relative;
+}
+.post .post-img-content img
+{
+    position: absolute;
+}
+.project .project-title
+{
+    display: table-cell;
+    vertical-align: bottom;
+    z-index: 2;
+    position: relative;
+}
+.project .project-title b
+{
+    background-color: #337ab7;
+    display: inline-block;
+    margin-bottom: 5px;
+    color: #FFF;
+    padding: 10px 15px;
+    margin-top: 5px;
+}
+
+.first-place{
+    color:#f1c40f;
+}
+.second-place{
+    color:#bdc3c7;
+}
+.third-place{
+    color:#cd7f32;
+}
+
+
+
