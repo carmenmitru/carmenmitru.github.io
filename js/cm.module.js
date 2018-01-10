@@ -1,22 +1,15 @@
-var CM = angular.module('CM',['ngRoute']);
-CM.controller("CmCtrl",function($scope){
+    var CM = angular.module('CM', ['ngRoute']);
+    CM.controller("CmCtrl", function ($scope, $http) {
+        $scope.navBarElem = [];
+        $scope.personalProjects = [];
 
-    $scope.navBarElem = [
-        {
-            "name":"About",
-            "path":"/about"
-        },
-        {
-            "name":"Courses",
-            "path":"/courses"
-        },
-        // {
-        //     "name":"Portofolio",
-        //     "path":"/portofolio"
-        // },
-        {
-            "name":"Blog",
-            "path":"/blog"
-        }
-    ]
-});
+        $http.get("js/navbarElements.json")
+            .then(function (response) {
+                 $scope.navBarElem =  response.data;
+        });
+
+        $http.get("js/projects.json")
+            .then(function (response) {
+                 $scope.personalProjects =  response.data;
+        });
+    });

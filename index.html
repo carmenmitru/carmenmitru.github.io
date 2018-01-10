@@ -1,18 +1,25 @@
 <!DOCTYPE html>
 <html ng-app="CM">
-    <base href="/" />
+  <base href="/" />
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>carmenmitru</title>
   <meta name="description" content="Personal Website">
-
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link rel="canonical" href="http://carmenmitru.github.io/">
   <!-- <link rel="alternate" type="application/rss+xml" title="carmenmitru" href="http://carmenmitru.github.io/feed.xml" /> -->
   <script src="js/angular/angular.min.js"></script>
   <script src="js/angular/angular-route.min.js"></script>
+  <!-- 
+  To review
+    <script src="js/pdf/pdf.worker.js"></script>
+  <script src="js/pdf/pdf.js"></script>
+  <script src="js/angular-pdf/angular-pdf.js"></script> -->
   <script src="js/cm.module.js"></script>
   <script src="js/cm.route.js"></script>
 </head>
@@ -29,10 +36,7 @@
       <span class="padding-sm" ng-repeat="item in navBarElem" >
           <a class="btn btn-ghost" ng-href="{{item.path}}">{{item.name}}</a>
       </span> 
-      <!-- <a href="/about" class="btn btn-ghost">about</a>
-      <a href="/courses" class="btn btn-ghost">courses</a>
-      <a href="/blog" class="btn btn-ghost">portofolio</a>
-      <a href="/blog" class="btn btn-ghost">blog</a> -->
+   
       
       <ul class="social">
         <li>

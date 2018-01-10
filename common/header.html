@@ -1,8 +1,8 @@
-<header class="site-header">
+<header class="site-header" ng-controller="CmCtrl" >
         <div class="container">
     
           <h1>
-            <a style="text-transform: capitalize;" href="/">
+            <a style="text-transform: none;" href="/">
               <span>Carmen Mitru</span>
             </a>
           </h1>
@@ -16,17 +16,9 @@
           <nav class="navbar sliding-panel-content">
     
             <ul>
-    
-              <li>
-                <a style="text-transform: capitalize;" href="/about" title="About">About</a>
+              <li ng-repeat="elem in navBarElem">
+                  <a href="{{elem.path}}" title="{{elem.name}}">{{elem.name}}</a>
               </li>
-    
-              <li>
-                <a style="text-transform: capitalize;" href="/blog" title="Blog">Blog</a>
-              </li>
-    
-    
-    
             </ul>
           </nav>
         </div>
