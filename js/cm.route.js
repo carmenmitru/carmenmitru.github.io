@@ -27,8 +27,6 @@ CM.config(function($routeProvider,$locationProvider){
             templateUrl : "blog/blog.html",
             controller: "CmCtrl"
         })
-        .otherwise({
-            redirectoTo:'/404'
-        });
-    $locationProvider.html5Mode(true);
+        .otherwise({redirectTo: '/'})
+        $locationProvider.html5Mode(true);
 });
